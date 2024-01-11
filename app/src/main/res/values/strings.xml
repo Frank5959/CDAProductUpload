@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CDAProductUpload</string>
+    <string name="images">images</string>
+    <string name="colors">colors</string>
+    <string name="sizes_optional_use_between_each_new_size">sizes_optional_use_between_each_new_size</string>
+    <string name="product_details">product_details</string>
+    <string name="offer_percentage_optional">offer_percentage_optional</string>
+    <string name="price">price</string>
+    <string name="product_description_optional">product_description_optional</string>
+    <string name="category">category</string>
+    <string name="name">name</string>
+    <string name="product_general_information">product_general_information</string>
+    <string name="add_product">Add product</string>
+</resources>
