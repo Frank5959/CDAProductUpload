@@ -4,18 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp">
+       >
+
+        <ProgressBar
+            android:id="@+id/loadingProgressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/productsInfo"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="30dp"
@@ -35,38 +46,35 @@
             <EditText
                 android:id="@+id/edName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:hint="@string/name"
-                android:layout_marginTop="10dp"
                 />
-
-
             <EditText
                 android:id="@+id/edCategory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/category"/>
+                android:hint="@string/category1"/>
 
             <EditText
                 android:id="@+id/edDescription"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/product_description_optional"
+                android:layout_height="48dp"
+                android:hint="@string/product_description_optional1"
                 />
 
             <EditText
                 android:id="@+id/edPrice"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/price"
-                android:inputType="number"/>
+                android:layout_height="48dp"
+                android:hint="@string/price1"
+                android:inputType="numberDecimal"/>
 
             <EditText
                 android:id="@+id/offerPercentage"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/offer_percentage_optional"
-                android:inputType="number"/>
+                android:layout_height="48dp"
+                android:hint="@string/offer_percentage_optional1"
+                android:inputType="numberDecimal"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -77,7 +85,6 @@
             app:layout_constraintTop_toBottomOf="@id/productsInfo"
             app:layout_constraintStart_toStartOf="@id/productsInfo"
             app:layout_constraintEnd_toEndOf="@id/productsInfo"
-            android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <TextView
@@ -91,37 +98,39 @@
             <EditText
                 android:id="@+id/edSizes"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/sizes_optional_use_between_each_new_size"
-                android:inputType="number"/>
+                android:layout_height="48dp"
+                android:hint="@string/sizes_optional_use_between_each_newsize"
+                android:inputType="text"/>
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
                 android:orientation="horizontal"
-                android:layout_gravity="center">
-                <Button
-                    android:id="@+id/buttonColorPicker"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/colors"
-                    android:textSize="14sp"
-                    android:layout_marginTop="10dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
+                >
                 <Button
                     android:id="@+id/buttonImagesPicker"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/images"
                     android:textSize="14sp"
-                    android:layout_marginTop="10dp"/>
+                   />
+                <TextView
+                    android:id="@+id/tvSelectedImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                   />
 
+                <Button
+                    android:id="@+id/btnsave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:textSize="14sp"
+                    />
             </LinearLayout>
 
 

@@ -2,13 +2,18 @@
     <string name="app_name">CDAProductUpload</string>
     <string name="images">images</string>
     <string name="colors">colors</string>
-    <string name="sizes_optional_use_between_each_new_size">sizes_optional_use_between_each_new_size</string>
-    <string name="product_details">product_details</string>
-    <string name="offer_percentage_optional">offer_percentage_optional</string>
     <string name="price">price</string>
-    <string name="product_description_optional">product_description_optional</string>
     <string name="category">category</string>
     <string name="name">name</string>
-    <string name="product_general_information">product_general_information</string>
     <string name="add_product">Add product</string>
+    <string name="offer_percentage_optional2">offer percentage(optional)</string>
+    <string name="product_details">product details</string>
+    <string name="sizes_optional_use_between_each_newsize">sizes(optional)|use,between each newsize</string>
+    <string name="product_description_optional">product description(optional)</string>
+    <string name="product_general_information">product general information</string>
+    <string name="category1">category</string>
+    <string name="product_description_optional1">product description(optional)</string>
+    <string name="price1">price</string>
+    <string name="offer_percentage_optional1">offer percentage(optional2)</string>
+    <string name="save">Save</string>
 </resources>
